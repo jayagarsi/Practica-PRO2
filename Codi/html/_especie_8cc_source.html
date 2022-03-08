@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Laboratori PRO2: Construcció d&#39;un arbre filogenètic: Fitxer de Codi Especie.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Laboratori PRO2: Construcció d&#39;un arbre filogenètic
+   &#160;<span id="projectnumber">Jaya Garcia Fernandez</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Especie.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_especie_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_especie_8hh.html">Especie.hh</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_especie.html#a53b6311031733ddedf987197a15dbeb0">   10</a></span>&#160;<a class="code" href="class_especie.html#a53b6311031733ddedf987197a15dbeb0">Especie::Especie</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; g, <span class="keywordtype">int</span>&amp; k) {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">gen</a> = g;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_especie.html#a3781e23ade31f7d45a4a70d4e245b56a">calcular_kmer</a>(k);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_especie.html#abd21378dde6e8348d823c6f87a1c0658">   17</a></span>&#160;<a class="code" href="class_especie.html#abd21378dde6e8348d823c6f87a1c0658">Especie::~Especie</a>() {}</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_especie.html#a850af2b59a21e2d801c59d76ba5c1a98">   19</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_especie.html#a850af2b59a21e2d801c59d76ba5c1a98">Especie::consultar_gen</a>()<span class="keyword"> const </span>{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">gen</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_especie.html#a00254534944ad3cda8bd458091460af5">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_especie.html#a00254534944ad3cda8bd458091460af5">Especie::consultar_kmer</a>(map&lt;string, int&gt;&amp; km)<span class="keyword"> const </span>{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    km = <a class="code" href="class_especie.html#a55f598539b21a0cd31d8254089b59e79">kmers</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_especie.html#a3781e23ade31f7d45a4a70d4e245b56a">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_especie.html#a3781e23ade31f7d45a4a70d4e245b56a">Especie::calcular_kmer</a>(<span class="keywordtype">int</span>&amp; k) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> i = 0;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">while</span> (i &lt; <a class="code" href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">gen</a>.length()-k+1) {                              </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">string</span> sub = <a class="code" href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">gen</a>.substr(i, k);                                      <span class="comment">// Obtinc el substring que va des de i fins a k</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        </div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        pair&lt;map&lt;string, int&gt;::iterator, <span class="keywordtype">bool</span>&gt; unic;                        <span class="comment">// Si el valor ja existia en el mapa, unic es fals</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        unic = <a class="code" href="class_especie.html#a55f598539b21a0cd31d8254089b59e79">kmers</a>.insert(make_pair(sub, 1));                             <span class="comment">// i es suma 1 al contador del string</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span> (not unic.second) ++unic.first-&gt;second; </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        ++i;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div><div class="ttc" id="class_especie_html_abd21378dde6e8348d823c6f87a1c0658"><div class="ttname"><a href="class_especie.html#abd21378dde6e8348d823c6f87a1c0658">Especie::~Especie</a></div><div class="ttdeci">~Especie()</div><div class="ttdoc">Destructora per defecte. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00017">Especie.cc:17</a></div></div>
+<div class="ttc" id="class_especie_html_a3781e23ade31f7d45a4a70d4e245b56a"><div class="ttname"><a href="class_especie.html#a3781e23ade31f7d45a4a70d4e245b56a">Especie::calcular_kmer</a></div><div class="ttdeci">void calcular_kmer(int &amp;k)</div><div class="ttdoc">Càlcul del kmer d&amp;#39;una seqüència. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00031">Especie.cc:31</a></div></div>
+<div class="ttc" id="class_especie_html_a850af2b59a21e2d801c59d76ba5c1a98"><div class="ttname"><a href="class_especie.html#a850af2b59a21e2d801c59d76ba5c1a98">Especie::consultar_gen</a></div><div class="ttdeci">string consultar_gen() const</div><div class="ttdoc">Consultora del gen de l&amp;#39;espècie. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00019">Especie.cc:19</a></div></div>
+<div class="ttc" id="class_especie_html_a53b6311031733ddedf987197a15dbeb0"><div class="ttname"><a href="class_especie.html#a53b6311031733ddedf987197a15dbeb0">Especie::Especie</a></div><div class="ttdeci">Especie(const string &amp;g, int &amp;k)</div><div class="ttdoc">Constructora per defecte. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00010">Especie.cc:10</a></div></div>
+<div class="ttc" id="_especie_8hh_html"><div class="ttname"><a href="_especie_8hh.html">Especie.hh</a></div><div class="ttdoc">Especificació de la classe espècie. </div></div>
+<div class="ttc" id="class_especie_html_ac35bb565f7346cd6317b3a8c849456d1"><div class="ttname"><a href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">Especie::gen</a></div><div class="ttdeci">string gen</div><div class="ttdoc">Gen de l&amp;#39;espècie. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00025">Especie.hh:25</a></div></div>
+<div class="ttc" id="class_especie_html_a55f598539b21a0cd31d8254089b59e79"><div class="ttname"><a href="class_especie.html#a55f598539b21a0cd31d8254089b59e79">Especie::kmers</a></div><div class="ttdeci">map&lt; string, int &gt; kmers</div><div class="ttdoc">Llista dels k-mers del gen de l&amp;#39;espècie. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00027">Especie.hh:27</a></div></div>
+<div class="ttc" id="class_especie_html_a00254534944ad3cda8bd458091460af5"><div class="ttname"><a href="class_especie.html#a00254534944ad3cda8bd458091460af5">Especie::consultar_kmer</a></div><div class="ttdeci">void consultar_kmer(map&lt; string, int &gt; &amp;km) const</div><div class="ttdoc">Consultora del conjunt de k-mers. </div><div class="ttdef"><b>Definition:</b> <a href="_especie_8cc_source.html#l00025">Especie.cc:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
